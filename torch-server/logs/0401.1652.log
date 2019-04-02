@@ -1,0 +1,26 @@
+2019-04-01 16:52 - MyLogger.app - INFO - File received
+2019-04-01 16:52 - MyLogger.app - INFO - Time checking quota: 0.0121
+2019-04-01 16:52 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'liangshuche'), ('uuid', '31978163')])
+2019-04-01 16:52 - MyLogger.app - INFO - Time reading byte stream: 0.007364
+2019-04-01 16:52 - MyLogger.app - INFO - Time transfering to file obj: 2.623e-06
+2019-04-01 16:52 - MyLogger.app - INFO - ============================================
+2019-04-01 16:52 - MyLogger.app - INFO - Try opening tar file
+2019-04-01 16:52 - MyLogger.app - INFO - Try Extracting file
+2019-04-01 16:52 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-01 16:52 - MyLogger.app - INFO - Loading into api...
+2019-04-01 16:52 - MyLogger.app - INFO - Done!
+2019-04-01 16:52 - MyLogger.app - INFO - Deleting tmp folder
+2019-04-01 16:52 - MyLogger.app - INFO - ============================================
+2019-04-01 17:47 - MyLogger.app - INFO - File received
+2019-04-01 17:47 - MyLogger.app - INFO - Time checking quota: 0.0111
+2019-04-01 17:47 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'fanoping'), ('uuid', '31955056')])
+2019-04-01 17:47 - MyLogger.app - INFO - Time reading byte stream: 0.01132
+2019-04-01 17:47 - MyLogger.app - INFO - Time transfering to file obj: 2.146e-06
+2019-04-01 17:47 - MyLogger.app - INFO - ============================================
+2019-04-01 17:47 - MyLogger.app - INFO - Try opening tar file
+2019-04-01 17:47 - MyLogger.app - INFO - Try Extracting file
+2019-04-01 17:47 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-01 17:47 - MyLogger.app - INFO - Loading into api...
+2019-04-01 17:47 - MyLogger.app - INFO - Done!
+2019-04-01 17:47 - MyLogger.app - INFO - Deleting tmp folder
+2019-04-01 17:47 - MyLogger.app - INFO - ============================================

@@ -1,0 +1,70 @@
+version: "2.3"
+
+services: 
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/my-site.conf:/etc/nginx/conf.d/my-site.conf
+      - ./nginx/my-site:/my-site
+    networks:
+      - my-net
+    ports:
+      - 22224:8000
+  
+  mongoapi:
+    build: mongo-api/
+    volumes:
+      - ./mongo-api/app.py:/mongo-api/app.py
+      - ./mongo-api/mongodb.py:/mongo-api/mongodb.py
+      - ./mongo-api/requirements.txt:/mongo-api/requirements.txt
+    networks:
+      - my-net
+    command:
+      gunicorn app:app -b 0.0.0.0:3386
+
+  mongo:
+    image: mongo
+    volumes:
+      - ./mongo-db:/data/db
+    networks:
+      - my-net
+  
+  node: 
+    image: node
+    volumes:
+      - ./node/index.js:/node/index.js
+      - ./node/package.json:/node/package.json
+      - ./node/package-lock.json:/node/package-lock.json
+      - ./node/node_modules:/node/node_modules
+    networks:
+      - my-net
+    working_dir: /node
+    command:
+      node index.js
+
+  torchnet:
+    build: torch-server
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    #deploy:
+    #  resources:
+    #    limits:
+    #      cpus: '2.0'
+    #    reservations: 
+    #      cpus: '1.0'
+    volumes:
+      - ./torch-server:/torch-server 
+    networks: 
+      - my-net 
+    command: 
+      gunicorn app:app -b 0.0.0.0:5000
+
+
+
+networks:
+  my-net: 
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.0.0/24
