@@ -1,4 +1,4 @@
-version: "2.3"
+version: "3"
 
 services: 
   nginx:
@@ -44,27 +44,18 @@ services:
 
   torchnet:
     build: torch-server
-    runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-    #deploy:
-    #  resources:
-    #    limits:
-    #      cpus: '2.0'
-    #    reservations: 
-    #      cpus: '1.0'
     volumes:
-      - ./torch-server:/torch-server 
+      - ./torch-server:/torch-server
     networks: 
       - my-net 
     command: 
       gunicorn app:app -b 0.0.0.0:5000
-
-
-
+    
 networks:
   my-net: 
     ipam:
       driver: default
       config:
-        - subnet: 192.168.0.0/24
+        - subnet: 192.168.0.0/16

@@ -1,0 +1,48 @@
+2019-04-09 08:22 - MyLogger.app - INFO - File received
+2019-04-09 08:22 - MyLogger.app - INFO - Time checking quota: 0.0108
+2019-04-09 08:22 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'hyes92121'), ('uuid', '19795349')])
+2019-04-09 08:22 - MyLogger.app - INFO - Time reading byte stream: 0.01254
+2019-04-09 08:22 - MyLogger.app - INFO - Time transfering to file obj: 2.623e-06
+2019-04-09 08:22 - MyLogger.app - INFO - ============================================
+2019-04-09 08:22 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 08:22 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 08:22 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 08:22 - MyLogger.app - INFO - Loading into api...
+2019-04-09 08:22 - MyLogger.app - INFO - ----------
+2019-04-09 08:22 - MyLogger.app - INFO - The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 0
+2019-04-09 08:22 - MyLogger.app - INFO - ----------
+2019-04-09 08:22 - MyLogger.app - INFO - Closing tarfile...
+2019-04-09 08:22 - MyLogger.app - INFO - Deleting tmp-4da327819ff9 folder
+2019-04-09 08:22 - MyLogger.app - INFO - ==========================================
+2019-04-09 08:29 - MyLogger.app - INFO - File received
+2019-04-09 08:29 - MyLogger.app - INFO - Time checking quota: 0.0116
+2019-04-09 08:29 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'hyes92121'), ('uuid', '19795349')])
+2019-04-09 08:29 - MyLogger.app - INFO - Time reading byte stream: 0.01412
+2019-04-09 08:29 - MyLogger.app - INFO - Time transfering to file obj: 2.384e-06
+2019-04-09 08:29 - MyLogger.app - INFO - ============================================
+2019-04-09 08:29 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 08:29 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 08:29 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 08:29 - MyLogger.app - INFO - Loading into api...
+2019-04-09 08:29 - MyLogger.app - INFO - ----------
+2019-04-09 08:29 - MyLogger.app - INFO - could not broadcast input array from shape (224,224,4) into shape (224,224)
+2019-04-09 08:29 - MyLogger.app - INFO - ----------
+2019-04-09 08:29 - MyLogger.app - INFO - Closing tarfile...
+2019-04-09 08:29 - MyLogger.app - INFO - Deleting tmp-4da327819ff9 folder
+2019-04-09 08:29 - MyLogger.app - INFO - ==========================================
+2019-04-09 08:47 - MyLogger.app - INFO - File received
+2019-04-09 08:47 - MyLogger.app - INFO - Time checking quota: 0.0093
+2019-04-09 08:47 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'Jennifer-Shiau'), ('uuid', '35568403')])
+2019-04-09 08:47 - MyLogger.app - INFO - Time reading byte stream: 0.01651
+2019-04-09 08:47 - MyLogger.app - INFO - Time transfering to file obj: 2.384e-06
+2019-04-09 08:47 - MyLogger.app - INFO - ============================================
+2019-04-09 08:47 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 08:47 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 08:47 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 08:47 - MyLogger.app - INFO - Loading into api...
+2019-04-09 08:47 - MyLogger.app - INFO - ----------
+2019-04-09 08:47 - MyLogger.app - INFO - could not broadcast input array from shape (224,224,4) into shape (224,224)
+2019-04-09 08:47 - MyLogger.app - INFO - ----------
+2019-04-09 08:47 - MyLogger.app - INFO - Closing tarfile...
+2019-04-09 08:47 - MyLogger.app - INFO - Deleting tmp-4da327819ff9 folder
+2019-04-09 08:47 - MyLogger.app - INFO - ==========================================

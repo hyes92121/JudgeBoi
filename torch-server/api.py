@@ -35,7 +35,7 @@ class SourceDataset(Dataset):
     
     def load(self, manifest):
         for p in manifest:
-            img = Image.open(p)
+            img = Image.open(p).convert('RGB')
             self.data.append(np.array(img))
     
     def get_raw(self):
@@ -67,7 +67,6 @@ def get_model_api():
     e1 = time.time()
     print(f'Time moving model to cuda: {e1-s1:.4f}')
 
-    dataset = SourceDataset()
     s1 = time.time()
     target_set = TargetDataset('label.csv')
     e1 = time.time()
@@ -87,55 +86,26 @@ def get_model_api():
     print(f'Time loading one batch: {e1-s1:.4f}')
     
     def model_api(d):
-        #ss = time.time()
-       
-        #s1 = time.time()
+        dataset = SourceDataset()
         dataset.load(d)
-        #e1 = time.time()
-        #print(f'Time loading data: {e1-s1:.4}')
-       
-        #s1 = time.time()
+    
         raw_source = dataset.get_raw()
         raw_source = np.array(raw_source)
-        #e1 = time.time()
-        #print(f'Time getting raw: {e1-s1:.4}')
 
-        dataloader = DataLoader(dataset, batch_size=8, shuffle=False, num_workers=0)
-        
-        #s1 = time.time()
+        dataloader = DataLoader(dataset, batch_size=8, shuffle=False, num_workers=0)    
         label = np.array([])
-        
+    
         for batch in dataloader:
             imgs = batch
-        
-            #s1 = time.time()
             imgs = imgs.cuda()
-            #e1 = time.time()
-            #print(f'Time moving to cuda: {e1-s1:.4}')
-        
-            #s1 = time.time()
             output = model(imgs)
-            #e1 = time.time()
-            #print(f'Time infering: {e1-s1:.4}')
-
+            
             output = np.array(torch.max(output, 1)[1].tolist())
             label = np.concatenate((label, output), axis=0)
-        #e1 = time.time()
-        #print(f'Time inferencing: {e1-s1:.4}')
-        
-        #s1 = time.time()
+       
         error = np.mean( [ np.max(imgs_gt[i].astype(np.float32) - raw_source[i].astype(np.float32)) for i in range(200)] )
-        #e1 = time.time()
-        #print(f'Time calculating error: {e1-s1:.4}')
-
-        #s1 = time.time()
         acc = np.mean(label!=labels_gt)
-        #e1 = time.time()
-        #print(f'Time calculating acc: {e1-s1:.4}')
-
-        # cleanup code
-        dataset.cleanup()
-
+        
         return acc, error
     
     return model_api

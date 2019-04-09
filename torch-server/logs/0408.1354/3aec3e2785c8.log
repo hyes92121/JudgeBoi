@@ -1,0 +1,16 @@
+2019-04-08 13:59 - MyLogger.app - INFO - File received
+2019-04-08 13:59 - MyLogger.app - INFO - Time checking quota: 0.0110
+2019-04-08 13:59 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'fanoping'), ('uuid', '31955056')])
+2019-04-08 13:59 - MyLogger.app - INFO - Time reading byte stream: 0.007069
+2019-04-08 13:59 - MyLogger.app - INFO - Time transfering to file obj: 3.576e-06
+2019-04-08 13:59 - MyLogger.app - INFO - ============================================
+2019-04-08 13:59 - MyLogger.app - INFO - Try opening tar file
+2019-04-08 13:59 - MyLogger.app - INFO - Try Extracting file
+2019-04-08 13:59 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-08 13:59 - MyLogger.app - INFO - Loading into api...
+2019-04-08 13:59 - MyLogger.app - INFO - ----------
+2019-04-08 13:59 - MyLogger.app - INFO - [Errno 2] No such file or directory: 'tmp/079.png'
+2019-04-08 13:59 - MyLogger.app - INFO - ----------
+2019-04-08 13:59 - MyLogger.app - INFO - Closing tarfile...
+2019-04-08 13:59 - MyLogger.app - INFO - Deleting tmp folder
+2019-04-08 13:59 - MyLogger.app - INFO - ============================================

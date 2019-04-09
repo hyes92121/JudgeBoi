@@ -65,14 +65,16 @@ def safe_untar(file_like_obj, username, uuid):
     try:
         logger.info('Try opening tar file')
         tar = tarfile.open(fileobj=file_like_obj, mode='r:gz')
-
+        
+        container_id = os.environ['HOSTNAME']
+        tmp_file = f'tmp-{container_id}'
         logger.info('Try Extracting file')
-        tar.extractall('tmp')
+        tar.extractall(tmp_file)
 
         logger.info('Cleaning up redundant files')
         subprocess.call(('sh', 'cleanup.sh'))
 
-        imgs = [f'tmp/{f}' for f in os.listdir('tmp')]
+        imgs = [f'{tmp_file}/{f}' for f in os.listdir(tmp_file)]
         assert (len(imgs) == 200)
 
         logger.info('Loading into api...')
@@ -89,10 +91,10 @@ def safe_untar(file_like_obj, username, uuid):
         logger.info('Error: FileFormatError')
         return {'status': 'bad', 'description': 'FileFormatError'}
     except tarfile.ExtractError:
-        logger.info('Error: ExtractError')
+        logger.info('Error: ExtractionError')
         logger.info('Closing tarfile...')
         tar.close()
-        return {'status': 'bad', 'description': 'ExtractError'}
+        return {'status': 'bad', 'description': 'ExtractionError'}
     except AssertionError:
         logger.info('Error: FileNumberError')
         logger.info('Closing tarfile...')
@@ -104,11 +106,13 @@ def safe_untar(file_like_obj, username, uuid):
         logger.info('----------')
         logger.info('Closing tarfile...')
         tar.close()
-        return {'status': 'bad', 'description': 'UnknownError'}
+        
+        return {'status': 'bad', 'description': str(error)}
     finally:
-        logger.info('Deleting tmp folder')
-        subprocess.call(('rm', '-rf', 'tmp'))
-        logger.info('============================================')
+        if os.path.exists(tmp_file):
+            logger.info(f'Deleting {tmp_file} folder')
+            subprocess.call(('rm', '-rf', tmp_file))
+        logger.info('==========================================')
 
 
 

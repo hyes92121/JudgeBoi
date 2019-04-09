@@ -1,0 +1,32 @@
+2019-04-08 18:30 - MyLogger.app - INFO - File received
+2019-04-08 18:30 - MyLogger.app - INFO - Time checking quota: 0.0097
+2019-04-08 18:30 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'Karen505034'), ('uuid', '37169657')])
+2019-04-08 18:30 - MyLogger.app - INFO - Time reading byte stream: 0.01057
+2019-04-08 18:30 - MyLogger.app - INFO - Time transfering to file obj: 2.146e-06
+2019-04-08 18:30 - MyLogger.app - INFO - ============================================
+2019-04-08 18:30 - MyLogger.app - INFO - Try opening tar file
+2019-04-08 18:30 - MyLogger.app - INFO - Try Extracting file
+2019-04-08 18:30 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-08 18:30 - MyLogger.app - INFO - Loading into api...
+2019-04-08 18:30 - MyLogger.app - INFO - ----------
+2019-04-08 18:30 - MyLogger.app - INFO - The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 0
+2019-04-08 18:30 - MyLogger.app - INFO - ----------
+2019-04-08 18:30 - MyLogger.app - INFO - Closing tarfile...
+2019-04-08 18:30 - MyLogger.app - INFO - Deleting tmp-d98a01371905 folder
+2019-04-08 18:30 - MyLogger.app - INFO - ============================================
+2019-04-08 19:07 - MyLogger.app - INFO - File received
+2019-04-08 19:07 - MyLogger.app - INFO - Time checking quota: 0.0091
+2019-04-08 19:07 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'Karen505034'), ('uuid', '37169657')])
+2019-04-08 19:07 - MyLogger.app - INFO - Time reading byte stream: 0.01445
+2019-04-08 19:07 - MyLogger.app - INFO - Time transfering to file obj: 2.384e-06
+2019-04-08 19:07 - MyLogger.app - INFO - ============================================
+2019-04-08 19:07 - MyLogger.app - INFO - Try opening tar file
+2019-04-08 19:07 - MyLogger.app - INFO - Try Extracting file
+2019-04-08 19:07 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-08 19:07 - MyLogger.app - INFO - Loading into api...
+2019-04-08 19:07 - MyLogger.app - INFO - ----------
+2019-04-08 19:07 - MyLogger.app - INFO - The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 0
+2019-04-08 19:07 - MyLogger.app - INFO - ----------
+2019-04-08 19:07 - MyLogger.app - INFO - Closing tarfile...
+2019-04-08 19:07 - MyLogger.app - INFO - Deleting tmp-d98a01371905 folder
+2019-04-08 19:07 - MyLogger.app - INFO - ============================================

@@ -1,0 +1,8 @@
+2019-04-09 09:06 - MyLogger.app - INFO - File received
+2019-04-09 09:06 - MyLogger.app - INFO - Time checking quota: 0.0125
+2019-04-09 09:06 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'wayne0911chang'), ('uuid', '47842975')])
+2019-04-09 09:06 - MyLogger.app - INFO - Time reading byte stream: 0.009588
+2019-04-09 09:06 - MyLogger.app - INFO - Time transfering to file obj: 5.245e-06
+2019-04-09 09:06 - MyLogger.app - INFO - ============================================
+2019-04-09 09:06 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 09:06 - MyLogger.app - INFO - Error: FileFormatError

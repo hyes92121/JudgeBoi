@@ -1,0 +1,11 @@
+2019-04-09 10:04 - MyLogger.app - INFO - File received
+2019-04-09 10:04 - MyLogger.app - INFO - Time checking quota: 0.0109
+2019-04-09 10:04 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'Jennifer-Shiau'), ('uuid', '35568403')])
+2019-04-09 10:04 - MyLogger.app - INFO - Time reading byte stream: 0.01549
+2019-04-09 10:04 - MyLogger.app - INFO - Time transfering to file obj: 2.861e-06
+2019-04-09 10:04 - MyLogger.app - INFO - ============================================
+2019-04-09 10:04 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 10:04 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 10:04 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 10:04 - MyLogger.app - INFO - Error: FileNumberError
+2019-04-09 10:04 - MyLogger.app - INFO - Closing tarfile...

@@ -1,0 +1,26 @@
+2019-04-09 05:33 - MyLogger.app - INFO - File received
+2019-04-09 05:33 - MyLogger.app - INFO - Time checking quota: 0.0116
+2019-04-09 05:33 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'hyes92121'), ('uuid', '19795349')])
+2019-04-09 05:33 - MyLogger.app - INFO - Time reading byte stream: 0.00688
+2019-04-09 05:33 - MyLogger.app - INFO - Time transfering to file obj: 2.861e-06
+2019-04-09 05:33 - MyLogger.app - INFO - ============================================
+2019-04-09 05:33 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 05:33 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 05:33 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 05:33 - MyLogger.app - INFO - Loading into api...
+2019-04-09 05:33 - MyLogger.app - INFO - Done!
+2019-04-09 05:33 - MyLogger.app - INFO - Deleting tmp-9e56108eccc9 folder
+2019-04-09 05:33 - MyLogger.app - INFO - ============================================
+2019-04-09 05:34 - MyLogger.app - INFO - File received
+2019-04-09 05:34 - MyLogger.app - INFO - Time checking quota: 0.0080
+2019-04-09 05:34 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'hyes92121'), ('uuid', '19795349')])
+2019-04-09 05:34 - MyLogger.app - INFO - Time reading byte stream: 0.01291
+2019-04-09 05:34 - MyLogger.app - INFO - Time transfering to file obj: 2.146e-06
+2019-04-09 05:34 - MyLogger.app - INFO - ============================================
+2019-04-09 05:34 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 05:34 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 05:34 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 05:34 - MyLogger.app - INFO - Loading into api...
+2019-04-09 05:34 - MyLogger.app - INFO - Done!
+2019-04-09 05:34 - MyLogger.app - INFO - Deleting tmp-9e56108eccc9 folder
+2019-04-09 05:34 - MyLogger.app - INFO - ============================================

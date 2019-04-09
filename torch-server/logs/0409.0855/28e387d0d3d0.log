@@ -1,0 +1,16 @@
+2019-04-09 08:56 - MyLogger.app - INFO - File received
+2019-04-09 08:56 - MyLogger.app - INFO - Time checking quota: 0.0114
+2019-04-09 08:56 - MyLogger.app - INFO - ImmutableMultiDict([('username', 'fanoping'), ('uuid', '31955056')])
+2019-04-09 08:56 - MyLogger.app - INFO - Time reading byte stream: 0.01039
+2019-04-09 08:56 - MyLogger.app - INFO - Time transfering to file obj: 2.623e-06
+2019-04-09 08:56 - MyLogger.app - INFO - ============================================
+2019-04-09 08:56 - MyLogger.app - INFO - Try opening tar file
+2019-04-09 08:56 - MyLogger.app - INFO - Try Extracting file
+2019-04-09 08:56 - MyLogger.app - INFO - Cleaning up redundant files
+2019-04-09 08:56 - MyLogger.app - INFO - Loading into api...
+2019-04-09 08:56 - MyLogger.app - INFO - ----------
+2019-04-09 08:56 - MyLogger.app - INFO - The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 0
+2019-04-09 08:56 - MyLogger.app - INFO - ----------
+2019-04-09 08:56 - MyLogger.app - INFO - Closing tarfile...
+2019-04-09 08:56 - MyLogger.app - INFO - Deleting tmp-28e387d0d3d0 folder
+2019-04-09 08:56 - MyLogger.app - INFO - ==========================================
